@@ -1,0 +1,136 @@
+body {
+    background: url('/src/img/imagemfundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 80px;
+    background-color: #1f143f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border-bottom: 2px solid #e8e8e8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.cabecalho .logo img {
+    width: 60px;  
+    height: auto;
+}
+
+
+.cabecalho .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu li a {
+    text-decoration: none;
+    color: #e8e8e8;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Chalet', sans-serif;
+    transition: 0.3s;
+}
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.cabecalho .logo img {
+    width: 60px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 150px; 
+    gap: 20px; 
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    width: 140px; 
+    flex: 1;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: flex 0.3s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: #ececec8c;
+}
+
+.card:hover {
+    flex: 3.0;
+}
+
+.info {
+    position: absolute;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.card:hover .info {
+    opacity: 1;
+}
+
+.tarefas {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    width: 50%;
+    max-width: 600px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin: 50px auto 0; 
+    margin-bottom: 60px;
+    gap: 15px;
+}
+
+footer {
+    color: #e8e8e8;
+    width: 100%;
+    height: 200px;
+    background-color: #1f143f;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid #e8e8e8;
+}
